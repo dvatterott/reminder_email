@@ -1,3 +1,3 @@
 # m h  dom mon dow   command
-05 0 1 * * python /home/pi/article_reminder/find_days.py > /home/pi/article_reminder/dates.txt
-15 0 * * * python /home/pi/article_reminder/send_email.py
+05 0 1 * * python /home/user/article_reminder/find_days.py > /home/user/article_reminder/dates.txt
+15 0 * * * python /home/user/article_reminder/send_email.py
