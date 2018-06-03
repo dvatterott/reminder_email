@@ -17,9 +17,9 @@ if __name__ == "__main__":
         if len(dates) > 0:
             final_date = dt.strptime(dates[-1].rstrip('\n'), str_format)
         else:
-            final_date = dt.strptime('1987-06-16', str_format)
+            final_date = dt.strptime('1980-01-01', str_format)
     else:
-        final_date = dt.strptime('1987-06-16', str_format)
+        final_date = dt.strptime('1980-01-01', str_format)
 
     if (not path.isfile(file_path)) or ((dt.today() - td(days=int(dt.today().strftime('%u')))) > final_date): 
         next_email = dt.today() + td(days=randint(0, 7-current_day))
